@@ -5,6 +5,7 @@ def func(nums,left,right):
         return
     nums[left],nums[right] = nums[right],nums[left]
     func(nums,left+1,right-1)
+
 def reverseArray(nums,l,r):
     func(nums,l,r)
     return nums
