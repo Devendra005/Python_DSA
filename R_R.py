@@ -5,7 +5,7 @@ temp = nums[n-1]
 for i in range(n-2,-1,-1):
     nums[i+1]=nums [i]
 nums[0]=temp
-print(temp)
+print(nums)
 
 
 
@@ -14,7 +14,7 @@ class Solution(object):
     def rotate(self, nums, k):
         n = len(nums)
         rotation = k%n
-        for _ in range (0,rotations):
+        for _ in range (0,rotation):
             d = nums.pop()
             nums.insert(0,d)
             print(nums)
