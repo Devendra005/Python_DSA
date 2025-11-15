@@ -20,14 +20,14 @@ class SinglyLinkedList:
     def insert_at(self, val, position):
         if position < 0:
             raise ValueError("Position cannot be negative")
-        
+            
         new_node = Node(val)
         
         if position == 0:
             new_node.next = self.head
             self.head = new_node
             return
-        
+            
         current = self.head
         prev_node = None
         count = 0
@@ -36,10 +36,10 @@ class SinglyLinkedList:
             prev_node = current
             current = current.next
             count += 1
-        
+            
         if count < position:
-            raise ValueError(f"Position {position} is beyond list length")
-        
+            raise IndexError("Position out of bounds")
+            
         prev_node.next = new_node
         new_node.next = current
     

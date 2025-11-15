@@ -32,7 +32,6 @@ class SinglyLinkedList:
         self.head = prev
             
     def display(self):
-        """Display the linked list"""
         curr = self.head
         while curr is not None:
             print(curr.val, end=" -> ")
