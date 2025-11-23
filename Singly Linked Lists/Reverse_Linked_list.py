@@ -57,4 +57,4 @@ if __name__ == "__main__":
     ll2.display()
     ll2.reverse()
     print("After reverse:")
-    ll2.display()          
+    ll2.display()
