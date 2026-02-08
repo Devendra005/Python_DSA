@@ -35,7 +35,7 @@ class Solution(object):
         return [lb, ub - 1]
 
 if __name__ == "__main__":
-    nums = [5, 7, 7, 8, 8, 10]
+    nums = [5, 7, 7, 8, 8, 8, 10]
     target = 8
     sol = Solution()
     print(sol.searchRange(nums, target))
